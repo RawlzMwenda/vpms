@@ -10,7 +10,7 @@ if(isset($_POST['submit']))
   {
     $parkingnumber=mt_rand(100000000, 999999999);
     $catename=$_POST['catename'];
-     $vehcomp=$_POST['vehcomp'];
+    $vehcomp=$_POST['vehcomp'];
     $vehreno=$_POST['vehreno'];
     $ownername=$_POST['ownername'];
     $ownercontno=$_POST['ownercontno'];

@@ -16,7 +16,7 @@ if(isset($_POST['submit']))
     $query=mysqli_query($con, "insert into  parking_space(parking_number,status,price_per_hour) value('$parkingnumber','$status','$price_per_hour')");
     if ($query) {
 echo "<script>alert('Vehicle Entry Detail has been added');</script>";
-echo "<script>window.location.href ='manage-incomingvehicle.php'</script>";
+echo "<script>window.location.href ='manage-parking.php'</script>";
   }
   else
     {
