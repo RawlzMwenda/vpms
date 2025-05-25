@@ -1,10 +1,9 @@
 import requests
 import base64
 from datetime import datetime
+import json
+import sys
 
-# Your credentials
-consumer_key = "YOUR_CONSUMER_KEY"
-consumer_secret = "YOUR_CONSUMER_SECRET"
 
 # Step 1: Get access token
 def get_access_token():
@@ -36,7 +35,6 @@ def initiate_stk_push():
         "Authorization": f"Bearer {access_token}",
         "Content-Type": "application/json"
     }
-
     payload =   {
     "BusinessShortCode": 174379,
     "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjUwNTI0MTYyMzQ4",
@@ -46,7 +44,7 @@ def initiate_stk_push():
     "PartyA": 254741232714,
     "PartyB": 174379,
     "PhoneNumber": 254741232714,
-    "CallBackURL": "https://mydomain.com/path",
+    "CallBackURL": "https://377b-105-163-156-18.ngrok-free.app/users/call_back.php",
     "AccountReference": "CompanyXLTD",
     "TransactionDesc": "Payment of X" 
   }
@@ -58,5 +56,4 @@ def initiate_stk_push():
     )
     print(response.json())
 
-# Run it
 initiate_stk_push()

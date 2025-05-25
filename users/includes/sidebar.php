@@ -12,6 +12,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <li class="<?php echo ($currentPage == 'book-space.php') ? 'active' : ''; ?>">
                     <a href="book-space.php"> <i class="menu-icon ti-truck"></i>Book a space </a>
                 </li>
+                <li class="<?php echo ($currentPage == 'manage-booking.php') ? 'active' : ''; ?>">
+                    <a href="manage-booking.php"> <i class="menu-icon ti-truck"></i>Bookings</a>
+                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>
