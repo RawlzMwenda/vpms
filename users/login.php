@@ -49,7 +49,7 @@ if(isset($_POST['login']))
             <div class="login-content">
                 <div class="login-logo">
                     <a href="index.php">
-                        <h2 style="color: #fff">VPMS!! Sign in</h2>
+                        <h2 style="color: #fff">VPMS!! Log in</h2>
                     </a>
                 </div>
                 <div class="login-form">
@@ -70,7 +70,7 @@ if(isset($_POST['login']))
                             </label>
 
                         </div>
-                        <button type="submit" name="login" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
+                        <button type="submit" name="login" class="btn btn-success btn-flat m-b-30 m-t-30">Log in</button>
                        
                        <div class="checkbox" style="padding-bottom: 20px;padding-top: 20px;">
                             

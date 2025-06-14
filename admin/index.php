@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting(0);
+error_reporting(E_ALL); ini_set('display_errors', 1);
 include('includes/dbconnection.php');
 
 if(isset($_POST['login']))
@@ -69,7 +69,7 @@ if(isset($_POST['login']))
                             </label>
 
                         </div>
-                        <button type="submit" name="login" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
+                        <button type="submit" name="login" class="btn btn-success btn-flat m-b-30 m-t-30">log in</button>
                        <div class="checkbox" style="padding-bottom: 20px;padding-top: 20px;">
                             
                             <label class="pull-right" >

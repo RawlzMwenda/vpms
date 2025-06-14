@@ -88,12 +88,14 @@ return true;
                         </div>
                         <div class="form-group">
                             <label>Mobile Number</label>
-                           <input type="text" name="mobilenumber" maxlength="10" pattern="[0-9]{10}" placeholder="Mobile Number" required="true" class="form-control">
+                           <input type="tel" name="mobilenumber" maxlength="10" pattern="[0-9]{10}" placeholder="Mobile Number" required="true" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Email address</label>
-                           <input type="email" name="email" placeholder="Email address" required="true" class="form-control">
-                        </div>
+
+  <label>Email address</label>
+
+  <input type="email" name="email" placeholder="Email address" required="true" class="form-control" pattern="[a-zA-Z0-9._%+-]+@(gmail|yahoo)\.(com|net|org)" title="Please enter a valid Gmail">
+</div>
                         <div class="form-group">
                             <label>Password</label>
                            <input type="password" name="password" placeholder="Enter password" required="true" class="form-control">

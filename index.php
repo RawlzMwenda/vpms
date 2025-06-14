@@ -1,68 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
-        <title>Vehicle Parking Management System|| Home Page</title>
-        
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="index.php">Vehicle Parking Management System</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="admin/index.php">Admin</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="users/login.php">Users</a></li>
-                       
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/q1.jpg" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Vehicle Parking Management System</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-               
-            </div>
-        </header>
-       
-     
-       
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VPMS Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<body class="flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">VPMS</h1>
+      <nav class="space-x-4">
+         <a href="admin/index.php"class="text-gray-600 hover:text-indigo-600">Admin</a>
+         <a href="users/login.php"class="text-gray-600 hover:text-indigo-600">Users</a>
+        <a href="#about" class="text-gray-600 hover:text-indigo-600">About</a>
+        <a href="#features" class="text-gray-600 hover:text-indigo-600">Features</a>
+        <a href="#testimonials" class="text-gray-600 hover:text-indigo-600">Testimonials</a>
+        <a href="#contact" class="text-gray-600 hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+<!-- Hero -->
+<section class="bg-gray-50 py-20" id="hero">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+    
+    <!-- Text Content -->
+    <div class="md:w-1/2 md:pr-12 text-center md:text-left mb-10 md:mb-0">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Revolutionize Your Parking</h2>
+      <p class="text-gray-600 mb-6">
+        VPMS uses real-time data and automation to streamline parking like never before.
+      </p>
+      <br><br><br><br>
       
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Automated Vehicle Parking Management System</small></div>
+      <a href="users/login.php" class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-500 transition">
+      
+        Get Started
+      </a>
+    </div>
+
+     <!-- Image -->
+    <div class="md:w-1/2">
+      <img src="users/includes/images/parking-concept.jpg" alt="VPMS Illustration"
+        class="w-full max-w-md mx-auto rounded shadow-xl" />
+    </div>
+
+  </div>
+</section>
+
+<!-- About Section -->
+<!-- About Section -->
+<section class="py-16 bg-white" id="about">
+  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+    
+    <!-- Image on the left -->
+    <div class="flex justify-center">
+      <img src="users/includes/images/using-parking.jpg" 
+           alt="About VPMS" 
+           class="rounded-lg shadow-2xl max-w-md w-full">
+    </div>
+
+    <!-- Text on the right -->
+    <div>
+      <h3 class="text-3xl font-bold text-gray-800 mb-4">About VPMS</h3>
+      <p class="text-gray-600 mb-4">
+        VPMS is a modern parking solution designed to reduce time spent searching for parking spots. Using intelligent sensors and real-time data, we help users find available spaces effortlessly.
+      </p>
+      <p class="text-gray-600">
+        Whether you're in a busy city or a small town, VPMS simplifies your parking experience through mobile app access, predictive analytics, and secure payments.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Features Section -->
+<section class="py-16 bg-gray-50" id="features">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center text-gray-800 mb-10">Key Features</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <div class="p-6 border rounded-lg text-center bg-white">
+        <img src="users/includes/images/time.jpg" alt="Real-Time Availability" 
+             class="w-full rounded shadow-lg h-40 object-cover mb-4">
+        <h4 class="text-xl font-semibold mb-2">Real-Time Availability</h4>
+        <p class="text-gray-600">Know exactly where to park before you arrive.</p>
+      </div>
+
+      <div class="p-6 border rounded-lg text-center bg-white">
+        <img src="users/includes/images/mobile-access.jpg" alt="Mobile App" 
+             class="w-full rounded shadow-lg h-40 object-cover mb-4">
+        <h4 class="text-xl font-semibold mb-2">Mobile App Access</h4>
+        <p class="text-gray-600">Reserve and pay directly from your phone.</p>
+      </div>
+
+      <div class="p-6 border rounded-lg text-center bg-white">
+        <img src="users/includes/images/online-payment.jpg" alt="Payments" 
+             class="w-full rounded shadow-lg h-40 object-cover mb-4">
+        <h4 class="text-xl font-semibold mb-2">Seamless Payments</h4>
+        <p class="text-gray-600">Multiple payment options with instant confirmation.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Testimonials Section -->
+  <section class="py-16 bg-white" id="testimonials">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center text-gray-800 mb-10">What Our Users Say</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <p class="text-gray-700 italic mb-4">“VPMS has saved me so much time. I no longer drive in circles looking for parking!”</p>
+          <p class="text-indigo-600 font-semibold">— Jamie R.</p>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <p class="text-gray-700 italic mb-4">“The app is super easy to use, and payment is a breeze. Highly recommend it!”</p>
+          <p class="text-indigo-600 font-semibold">— Priya S.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow">
+          <p class="text-gray-700 italic mb-4">“Excellent customer service and the tech just works. Love it!”</p>
+          <p class="text-indigo-600 font-semibold">— Carlos M.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 bg-gray-50" id="contact">
+    <div class="container mx-auto px-4 max-w-2xl">
+      <h3 class="text-3xl font-bold text-center text-gray-800 mb-6">Contact Us</h3>
+      <form class="bg-white p-6 rounded shadow space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded">
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded">
+        <textarea placeholder="Your Message" class="w-full p-3 border rounded h-32"></textarea>
+        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-500">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 VPMS. All rights reserved.</p>
+  </footer>
+
+  <!-- Smooth Scrolling -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
 </html>
